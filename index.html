@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Student Community Day Indore</title>
+    <link rel="stylesheet" href="app/globals.css">
+    <!-- Tailwind CSS will be processed by the v0 environment based on globals.css and tailwind.config.ts -->
+</head>
+<body class="flex min-h-[100dvh] flex-col bg-background text-foreground">
+    <header class="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-sm">
+        <div class="container flex h-16 items-center justify-between px-4 md:px-6">
+            <a href="#home" class="flex items-center gap-2 font-bold text-primary">
+                <img src="/placeholder.svg?height=32&width=32" alt="AWS Logo" width="32" height="32" />
+                <span>AWS Student Community Day Indore</span>
+            </a>
+            <nav class="hidden items-center gap-6 md:flex">
+                <a href="#home" class="text-sm font-medium transition-colors hover:text-primary">Home</a>
+                <a href="#about" class="text-sm font-medium transition-colors hover:text-primary">About</a>
+                <a href="#speakers" class="text-sm font-medium transition-colors hover:text-primary">Speakers</a>
+                <a href="#schedule" class="text-sm font-medium transition-colors hover:text-primary">Schedule</a>
+                <a href="#sponsors" class="text-sm font-medium transition-colors hover:text-primary">Sponsors</a>
+                <a href="#team" class="text-sm font-medium transition-colors hover:text-primary">Team</a>
+                <a href="#contact" class="text-sm font-medium transition-colors hover:text-primary">Contact</a>
+                <a href="#contact" class="ml-4 inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground ring-offset-background transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">
+                    Register Now
+                </a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-trigger" class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                    <span class="sr-only">Toggle navigation menu</span>
+                </button>
+                <div id="mobile-menu-overlay" class="sheet-overlay"></div>
+                <div id="mobile-menu-content" class="sheet-content">
+                    <div class="flex flex-col gap-4 py-6">
+                        <a href="#home" class="text-lg font-medium hover:text-primary">Home</a>
+                        <a href="#about" class="text-lg font-medium hover:text-primary">About</a>
+                        <a href="#speakers" class="text-lg font-medium hover:text-primary">Speakers</a>
+                        <a href="#schedule" class="text-lg font-medium hover:text-primary">Schedule</a>
+                        <a href="#sponsors" class="text-lg font-medium hover:text-primary">Sponsors</a>
+                        <a href="#team" class="text-lg font-medium hover:text-primary">Team</a>
+                        <a href="#contact" class="text-lg font-medium hover:text-primary">Contact</a>
+                        <a href="#contact" class="mt-4 inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground ring-offset-background transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">
+                            Register Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-1">
+        <!-- Hero Section -->
+        <section id="home" class="relative flex h-[60vh] items-center justify-center bg-cover bg-center text-center md:h-[80vh]" style="background-image: url('/placeholder.svg?height=1080&width=1920');">
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="relative z-10 space-y-4 px-4 text-white">
+                <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+                    AWS Student Community Day Indore
+                </h1>
+                <p class="text-lg md:text-xl lg:text-2xl">20th July 2024 | Medi-Caps University, Indore</p>
+                <a href="#contact" class="mt-6 inline-flex h-12 items-center justify-center whitespace-nowrap rounded-md bg-primary px-8 py-3 text-lg font-medium text-primary-foreground ring-offset-background transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">
+                    Register Now
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-12 md:py-20 lg:py-28">
+            <div class="container space-y-10 px-4 md:px-6">
+                <div class="mx-auto max-w-3xl text-center">
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About the Event</h2>
+                    <p class="mt-4 text-muted-foreground md:text-xl">
+                        AWS Student Community Day Indore is a premier event designed to bring together students, developers, and
+                        cloud enthusiasts to explore the latest advancements in Amazon Web Services. This event provides a
+                        unique platform for learning, networking, and hands-on experience with AWS technologies.
+                    </p>
+                </div>
+                <div id="about-stats" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                    <!-- Stats will be dynamically loaded here by script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Speakers Section -->
+        <section id="speakers" class="bg-muted py-12 md:py-20 lg:py-28">
+            <div class="container space-y-10 px-4 md:px-6">
+                <div class="mx-auto max-w-3xl text-center">
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Speakers</h2>
+                    <p class="mt-4 text-muted-foreground md:text-xl">
+                        Meet the industry experts and thought leaders who will be sharing their knowledge and insights.
+                    </p>
+                </div>
+                <div id="speakers-grid" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                    <!-- Speakers will be dynamically loaded here by script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="py-12 md:py-20 lg:py-28">
+            <div class="container space-y-10 px-4 md:px-6">
+                <div class="mx-auto max-w-3xl text-center">
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Event Schedule</h2>
+                    <p class="mt-4 text-muted-foreground md:text-xl">Plan your day with our detailed event schedule.</p>
+                </div>
+                <div class="w-full">
+                    <div class="grid w-full grid-cols-1 md:grid-cols-1 bg-muted p-1 rounded-md" role="tablist">
+                        <button class="tab-trigger inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-sm active" data-tab="day-1" role="tab">Day 1: July 20, 2024</button>
+                    </div>
+                    <div id="tab-content-day-1" class="tab-content mt-6 active" role="tabpanel">
+                        <div id="schedule-accordion" class="w-full">
+                            <!-- Schedule items will be dynamically loaded here by script.js -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sponsors Section -->
+        <section id="sponsors" class="bg-muted py-12 md:py-20 lg:py-28">
+            <div class="container space-y-10 px-4 md:px-6">
+                <div class="mx-auto max-w-3xl text-center">
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Sponsors</h2>
+                    <p class="mt-4 text-muted-foreground md:text-xl">
+                        We are grateful to our generous sponsors for making this event possible.
+                    </p>
+                </div>
+                <div id="sponsors-list">
+                    <!-- Sponsors will be dynamically loaded here by script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="py-12 md:py-20 lg:py-28">
+            <div class="container space-y-10 px-4 md:px-6">
+                <div class="mx-auto max-w-3xl text-center">
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Team</h2>
+                    <p class="mt-4 text-muted-foreground md:text-xl">
+                        Meet the dedicated team behind AWS Student Community Day Indore.
+                    </p>
+                </div>
+                <div id="team-grid" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                    <!-- Team members will be dynamically loaded here by script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-muted py-12 md:py-20 lg:py-28">
+            <div class="container space-y-10 px-4 md:px-6">
+                <div class="mx-auto max-w-3xl text-center">
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get in Touch</h2>
+                    <p class="mt-4 text-muted-foreground md:text-xl">
+                        Have questions or need assistance? Reach out to us!
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-6">
+                        <h3 class="mb-4 text-2xl font-semibold leading-none tracking-tight">Send us a message</h3>
+                        <form class="grid gap-4">
+                            <input type="text" placeholder="Your Name" class="flex h-10 w-full rounded-md border border-input bg-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 text-foreground" />
+                            <input type="email" placeholder="Your Email" class="flex h-10 w-full rounded-md border border-input bg-input px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 text-foreground" />
+                            <textarea placeholder="Your Message" class="flex min-h-[120px] w-full rounded-md border border-input bg-input px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 text-foreground"></textarea>
+                            <button type="submit" class="inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground ring-offset-background transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm p-6">
+                        <h3 class="mb-4 text-2xl font-semibold leading-none tracking-tight">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-primary"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.93 1.93 0 0 1-2.06 0L2 7"/></svg>
+                                <a href="mailto:info@example.com" class="text-muted-foreground hover:text-primary">
+                                    info@example.com
+                                </a>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-primary"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2 3.18 2 2 0 0 1 4.18 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                <a href="tel:+1234567890" class="text-muted-foreground hover:text-primary">
+                                    +1 (234) 567-890
+                                </a>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 flex-shrink-0 text-primary"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <p class="text-muted-foreground">
+                                    Medi-Caps University, A.B. Road, Pigdamber, Rau, Indore, Madhya Pradesh 453331
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-6 h-64 w-full overflow-hidden rounded-lg bg-gray-800">
+                            <img src="/placeholder.svg?height=256&width=500" alt="Map location" width="500" height="256" class="h-full w-full object-cover" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-border/40 bg-background py-8">
+        <div class="container flex flex-col items-center justify-between gap-4 px-4 md:flex-row md:px-6">
+            <p class="text-sm text-muted-foreground">
+                &copy; <span id="current-year"></span> AWS Student Community Day Indore. All rights reserved.
+            </p>
+            <nav class="flex gap-6">
+                <a href="#home" class="text-sm font-medium text-muted-foreground hover:text-primary">Home</a>
+                <a href="#about" class="text-sm font-medium text-muted-foreground hover:text-primary">About</a>
+                <a href="#speakers" class="text-sm font-medium text-muted-foreground hover:text-primary">Speakers</a>
+                <a href="#contact" class="text-sm font-medium text-muted-foreground hover:text-primary">Contact</a>
+            </nav>
+            <div class="flex gap-4">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                    <span class="sr-only">Twitter</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
