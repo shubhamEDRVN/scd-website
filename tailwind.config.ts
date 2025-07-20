@@ -1,13 +1,14 @@
 import type { Config } from "tailwindcss"
 
 const config = {
-  darkMode: ["class"], // This enables the 'dark' class for dark mode
+  darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
-    "*.{js,ts,jsx,tsx,mdx}", // Include index.html for Tailwind to scan
+    "./index.html", // Include index.html for Tailwind processing
+    "./script.js", // Include script.js for Tailwind processing
   ],
   prefix: "",
   theme: {
@@ -53,6 +54,17 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Custom AWS-inspired colors
+        awsPurple: {
+          DEFAULT: "#4A2771", // A deep purple
+          light: "#6A3E9B",
+          dark: "#3A1F5A",
+        },
+        awsOrange: {
+          DEFAULT: "#FF9900", // AWS orange
+          light: "#FFAA22",
+          dark: "#CC7A00",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -68,10 +80,30 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "fade-in-up": {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "slide-in-left": {
+          "0%": { opacity: "0", transform: "translateX(-20px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+        "slide-in-right": {
+          "0%": { opacity: "0", transform: "translateX(20px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+        "zoom-in": {
+          "0%": { opacity: "0", transform: "scale(0.9)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in-up": "fade-in-up 0.8s ease-out forwards",
+        "slide-in-left": "slide-in-left 0.7s ease-out forwards",
+        "slide-in-right": "slide-in-right 0.7s ease-out forwards",
+        "zoom-in": "zoom-in 0.6s ease-out forwards",
       },
     },
   },
