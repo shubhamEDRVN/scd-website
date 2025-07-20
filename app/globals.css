@@ -4,6 +4,40 @@
 
 @layer base {
   :root {
+    /* Light Mode Colors (Default) */
+    --background: 0 0% 100%; /* #ffffff */
+    --foreground: 240 10% 3.9%; /* #0a0a0a */
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 263 82% 70%; /* #8b5cf6 */
+    --primary-foreground: 0 0% 100%; /* #ffffff */
+
+    --secondary: 240 4.8% 95.9%; /* #f1f5f9 */
+    --secondary-foreground: 240 5.9% 10%; /* #0a0a0a */
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 50.6%; /* #71717a */
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 72.2% 50.6%; /* #ef4444 */
+    --destructive-foreground: 240 5.9% 90%; /* #e4e4e7 */
+
+    --border: 240 5.9% 90%; /* #e4e4e7 */
+    --input: 240 4.8% 95.9%;
+    --ring: 263 82% 70%; /* #8b5cf6 */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Dark Mode Colors */
     --background: 0 0% 3.9%; /* #0a0a0a */
     --foreground: 240 5.9% 90%; /* #e4e4e7 */
 
@@ -14,9 +48,9 @@
     --popover-foreground: 240 5.9% 90%;
 
     --primary: 263 82% 70%; /* #8b5cf6 */
-    --primary-foreground: 240 5.9% 10%;
+    --primary-foreground: 240 5.9% 10%; /* #0a0a0a */
 
-    --secondary: 240 3.7% 15.9%;
+    --secondary: 240 3.7% 15.9%; /* #27272a */
     --secondary-foreground: 240 5.9% 90%;
 
     --muted: 240 3.7% 15.9%;
@@ -31,8 +65,6 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 263 82% 70%; /* #8b5cf6 */
-
-    --radius: 0.5rem;
   }
 }
 
